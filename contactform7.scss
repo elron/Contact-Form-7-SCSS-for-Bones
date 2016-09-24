@@ -1,0 +1,99 @@
+/*****
+
+Contact Form - Page:
+
+[text* your-name placeholder 'שם:'][email* your-email placeholder 'דוא"ל:'][tel your-phone placeholder 'טלפון:'][textarea your-message placeholder 'כתוב הודעה כאן:'][submit class:hvr-sweep-to-left "שלח"]
+
+*****/
+div.wpcf7 {
+    .screen-reader-response {
+    }
+    
+    img.ajax-loader {
+    }
+
+    div.ajax-error {
+    }
+
+    .placeheld {
+    }
+    p {
+        margin: 0;
+    }
+}
+
+div.wpcf7-response-output {
+    margin: 0.8em 0 0;
+    padding: 0.5em 1em;
+    background-color: $white;
+}
+
+
+div.wpcf7-mail-sent-ok {
+	border-color: $alert-green;
+}
+
+div.wpcf7-mail-sent-ng {
+	border-color: $alert-red;
+}
+
+div.wpcf7-spam-blocked {
+	border-color: $alert-yellow;
+}
+
+div.wpcf7-validation-errors {
+	border-color: $alert-yellow;
+}
+
+.wpcf7-form-control-wrap {
+    display: block;
+    margin: 0 0 0.65em;
+    input {
+        margin-bottom: 0;
+    }
+}
+
+
+$wpcf7-line-height: 1em;
+span.wpcf7-not-valid-tip {
+	// @include transition( right 500ms $cubic-bezier );
+    animation: fadeInFromNone 0.3s ease-out;
+    color: inherit;
+    font-size:0.8em;
+    line-height: $wpcf7-line-height;
+    margin-top: 0.4em;
+}
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+        height: 0em;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        height: $wpcf7-line-height;
+    }
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+}
+
+span.wpcf7-list-item {
+}
+
+.wpcf7-display-none {
+}
+
+.wpcf7-recaptcha iframe {
+}
+
+.ajax-loader {
+    
+}
